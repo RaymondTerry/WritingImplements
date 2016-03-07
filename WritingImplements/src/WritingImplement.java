@@ -3,7 +3,39 @@ abstract class WritingImplement
     private String bodyMaterial;
     private double pointSize;
     private double length; 
+    
+    /*
+     * A constructor for the WritingImplement class
+     *
+	  * @param 	bodyMaterial 	The material the object is made of. Must be "plastic", "wooden", or "metal"</param>
+     * @param 	pointsize		The size of the writing point. Must be positive.
+	  */
+    public WritingImplement(String bodyMaterial, double pointsize)
+    {
+        setBodyMaterial(bodyMaterial);
+        setPointSize(pointsize);
+        this.length = 5.5;
+    }
+    
+    
+    /**
+	  * Mutator method for pointSize
+	  *
+	  * @param	pointSize  the size of the writing tip in mm (must be postitive, defaults to 0.5)
+	  */
+	 public void setPointSize(double pointSize)
+   {
+       if (pointSize > 0)
+       {
+           this.pointSize = pointSize;
+       }
+       else    // invalid point size... set to 0
+       {
+           this.pointSize = 0.5;
+       }
+    }
 
+	 
     /**
 	  * Accessor method for pointSize
 	  *
@@ -13,6 +45,7 @@ abstract class WritingImplement
     {
        return pointSize;
     }
+    
     
     /**
      * Method for getting the length
@@ -24,24 +57,7 @@ abstract class WritingImplement
     	return length;
     }
     
-	 /**
-	  * Mutator method for pointSize
-	  *
-	  * @param	pointSize  the size of the writing tip in mm (must be postitive, defaults to 0.5)
-	  */
-	 public void setPointSize(double pointSize)
-    {
-        if (pointSize > 0)
-        {
-            this.pointSize = pointSize;
-        }
-        else    // invalid point size... set to 0
-        {
-            this.pointSize = 0.5;
-        }
-    }
 
-	
 	 /**
      * Accessor method for bodyMaterial      
 	  *
@@ -73,24 +89,7 @@ abstract class WritingImplement
         
     }
         
-        
-    /*
-     * A constructor for the WritingImplement class
-     *
-	  * @param 	bodyMaterial 	The material the object is made of. Must be "plastic", "wooden", or "metal"</param>
-     * @param 	pointsize		The size of the writing point. Must be positive.
-	  */
-    public WritingImplement(String bodyMaterial, double pointsize)
-    {
-        setBodyMaterial(bodyMaterial);
-        setPointSize(pointsize);
-        this.length = 5.5;
-        
-    }
-     
-
-
-
+       
     /**
 	  * A method to simulate the writing implement writing a message.
      *
@@ -101,8 +100,6 @@ abstract class WritingImplement
         System.out.println("The " + bodyMaterial + " writing implement just wrote:  " + message);
     }
     
-	 
-	 
 	 
 	 /**
 	  * Method to describe the writing implement drawing something
