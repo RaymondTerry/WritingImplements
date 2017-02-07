@@ -4,7 +4,10 @@ public class WritingImplements
 {
 	public static void main(String[] args)
 	{
-		Pencil no2Pencil = new Pencil();
+		//Section 1 - Simple Tests
+	    
+	    
+	    Pencil no2Pencil = new Pencil();
 		Pencil mechPencil = new Pencil("plastic", "clear blue", 0.7);
 
 		
@@ -21,7 +24,7 @@ public class WritingImplements
 
 
 
-            // Here is where the fun begins!!!
+        //Section 2 - Collection
 
 		ArrayList<WritingImplement> myPencilBox = new ArrayList<WritingImplement>();
  		myPencilBox.add(no2Pencil);
