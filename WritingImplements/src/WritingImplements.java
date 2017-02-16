@@ -18,6 +18,12 @@ public class WritingImplements
 		Marker sharpie = new Marker("green", "bullet", 2.0);
 
 		myPurplePen.write("I'm hungry");
+		
+		Highlighter yellowHighlighter = new Highlighter("chisel", "yellow");
+		
+		yellowHighlighter.highlight("I'm hungry");
+		
+		
 
 
 
@@ -34,11 +40,14 @@ public class WritingImplements
  		myPencilBox.add(dryErase);
 		myPencilBox.add(sharpie);
  		myPencilBox.add(new Pen("blue", "plastic", 0.9));
+ 		myPencilBox.add(yellowHighlighter);
+ 		myPencilBox.add(new Highlighter());
 
  		for (WritingImplement w : myPencilBox)
   		{
 			w.draw("a circle");
 			w.write("I am really hungry");
+			
 		}
 
 	}
