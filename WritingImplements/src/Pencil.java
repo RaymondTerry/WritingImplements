@@ -27,7 +27,6 @@ class Pencil extends WritingImplement
      * @param   leadSize        The size of the writing point in mm.
      */
     public Pencil(String bodyMaterial, String bodyColor, double leadSize)
-
     {
         super(bodyMaterial, leadSize);
         setBodyColor(bodyColor);
