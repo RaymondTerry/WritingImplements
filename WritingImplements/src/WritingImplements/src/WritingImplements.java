@@ -2,6 +2,8 @@ package WritingImplements.src;
 
 import java.util.ArrayList;
 
+import WritingImplements.src.Highlighter;
+
 public class WritingImplements
 {
 	public static void main(String[] args)
