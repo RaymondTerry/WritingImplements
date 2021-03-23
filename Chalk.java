@@ -1,4 +1,4 @@
-package WritingImplements.src;
+ 
 
 class Chalk extends WritingImplement
 {

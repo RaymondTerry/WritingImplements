@@ -1,4 +1,4 @@
-package WritingImplements.src;
+ 
 
 abstract class WritingImplement
 {

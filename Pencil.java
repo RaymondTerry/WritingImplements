@@ -1,4 +1,4 @@
-package WritingImplements.src;
+ 
 
 /**
  * This class is a subclass of the writingImplement class. This class
