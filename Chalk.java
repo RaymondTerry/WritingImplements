@@ -8,9 +8,9 @@ class Chalk extends WritingImplement
     /**
      * Constructor for objects of class Chalk
      * 
-     * @param	bodyMaterial	The material that holds the chalk. Must be Plastic, wooden, metal.
-	 * @param 	chalkColor  	The color of the chalk and the color it write.
-	 * @param	Length   		The length of the chalk stick in cm.
+     * @param    bodyMaterial    The material that holds the chalk. Must be Plastic, wooden, metal.
+     * @param     chalkColor      The color of the chalk and the color it write.
+     * @param    Length           The length of the chalk stick in cm.
      */
     public Chalk(String bodyMaterial,String chalkColor, double length)
     {
@@ -32,5 +32,16 @@ class Chalk extends WritingImplement
     public void fill(String shape)
     {
         System.out.println("The chalk drew a "+ shape+ " and filled it in on its Side");
+    }
+    
+    /**
+     * This method simulates the chalk erasing the shape that was filled
+     *
+     * @param   shape   The shape filling the chalk erased.
+     * @param   chalkColor   The color of the chalk.
+     */
+    public void erase(String shape)
+    {
+        System.out.println("The " + chalkColor + " chalk just erased the " + shape);
     }
 }

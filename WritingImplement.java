@@ -1,6 +1,6 @@
  
 
-abstract class WritingImplement
+abstract class WritingImplement implements Erasable
 {
     private String bodyMaterial;
     private double pointSize;
@@ -99,5 +99,5 @@ abstract class WritingImplement
     {
         System.out.println("The " + bodyMaterial + " writing implement just drew: " + something);
     }
-
+    
 }

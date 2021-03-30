@@ -75,5 +75,15 @@ class Pen extends WritingImplement
     {
         System.out.println("The " + inkColor +
         " pen just marked out the word(s):  " + words);
-    }      
+    }
+    
+    /**
+     * This method simulates the pen erasing words
+     *
+     * @param   words   The words the pen erased
+     */
+    public void erase(String words)
+    {
+        System.out.println("The " + getBodyMaterial() + " " + inkColor + " pen just erased the word(s): " + words);
+    }
 }
