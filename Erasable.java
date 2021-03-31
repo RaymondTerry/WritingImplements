@@ -14,3 +14,4 @@ public interface Erasable
      */
     public void erase(String something);
 }
+
