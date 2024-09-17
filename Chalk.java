@@ -33,4 +33,14 @@ class Chalk extends WritingImplement
     {
         System.out.println("The chalk drew a "+ shape+ " and filled it in on its Side");
     }
+    
+    /**
+     * Method to erase the shape of filling that was previously drawn
+     *
+     * @param shape 	The shape of the drawing that is going to be erased.
+     */
+    public void erase(String shape)
+    {
+    	System.out.println("The "+ shape+ " that was drew and filled in was erased");
+    }
 }
